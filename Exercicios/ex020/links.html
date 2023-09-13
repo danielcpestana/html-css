@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: white;
+        }
+
+        .especial{
+            background-color: aqua;
+        }
+        .especial::before{
+            content:'-> ';
+        }
+        
+        .especial::after{
+            content: ' <-';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/danielcpestana" target="_blank" class="especial">Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCyqSF-OfGtkFt3n2MsMZoNA" target="_blank">Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/daniel-pestana-032859237/" target="_blank">Linkedin</a></li>
+    </ul>
+    
+</body>
+</html>
